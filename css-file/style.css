@@ -19,8 +19,8 @@ body {
 font-family: Raleway;
 font-size: 26px;
 font-weight: 700;
-line-height: normal;
-letter-spacing: 1.38;
+line-height: 1.14;
+letter-spacing: 0.28px;
 }
 
 .Web{
@@ -35,16 +35,16 @@ letter-spacing: 1.38;
 color: var(--max-text-color);
 font-size: 14px;
 font-weight: 500;
-line-height: normal;
-letter-spacing: 1.14;
+line-height: 1.14;
+letter-spacing: 0.28px;
 }
 
 .header-items {
   color:var(--mini-text-color);
 font-size: 14px;
 font-weight: 500;
-line-height: normal;
-letter-spacing: 1.14;
+line-height: 1.14;
+letter-spacing: 0.28px;
 }
 
 .header-item:hover{
@@ -58,8 +58,8 @@ letter-spacing: 1.14;
 text-align: center;
 font-size: 44px;
 font-weight: 900;
-line-height: 60px; 
-letter-spacing: 1.36;
+line-height: 1.36; 
+letter-spacing: 2.64px;
 text-transform: uppercase;
 }
 
@@ -68,8 +68,8 @@ text-transform: uppercase;
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  line-height: 30px; 
-  letter-spacing: 1.87;
+  line-height: 1.87; 
+  letter-spacing: 0.96px;
 }
 
 /* про нашу сторінку */
@@ -99,7 +99,7 @@ text-align: center;
 font-size: 36px;
 font-weight: 700;
 line-height: normal;
-letter-spacing: 1.16;
+letter-spacing: 1.08px;
 }
 
 .ourwork-img {
@@ -115,8 +115,8 @@ flex-shrink: 0;
 text-align: center;
 font-size: 36px;
 font-weight: 700;
-line-height: normal;
-letter-spacing: 1.16;
+line-height: 1.16;
+letter-spacing: 0.48px;
 }
 
 .aboutus-image{
@@ -130,8 +130,8 @@ flex-shrink: 0;
 text-align: center;
 font-size: 16px;
 font-weight: 500;
-line-height: normal;
-letter-spacing: 1.18;
+line-height: 1.18;
+letter-spacing: 0.48px;
 }
 
 .aboutus-text{
@@ -139,8 +139,8 @@ letter-spacing: 1.18;
 text-align: center;
 font-size: 16px;
 font-weight: 400;
-line-height: normal;
-letter-spacing: 1.18;
+line-height: 1.18;
+letter-spacing: 0.48px;
 }
 
 /* footer */
