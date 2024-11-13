@@ -6,5 +6,157 @@
   --header-footer-background-color: #2F303A;
   --button-backgrouhd-color: #2196F3;
   --logo-color: #000000;
+  --mini-text-footer-color: rgba(255, 255, 255, 0.60);
 }
 
+body {
+  font-family: Roboto;
+}
+
+/* навігація сайту */
+
+.header-logo {
+font-family: Raleway;
+font-size: 26px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.38;
+}
+
+.Web{
+  color: var(--button-backgrouhd-color);
+}
+
+.Studio {
+  color: var(--logo-color);
+}
+
+.header-item {
+color: var(--max-text-color);
+font-size: 14px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.14;
+}
+
+.header-items {
+  color:var(--mini-text-color);
+font-size: 14px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.14;
+}
+
+.header-item:hover{
+  color: var(--button-backgrouhd-color);
+}
+
+/* Шапка сайту */
+
+.hero-title{
+  color: var(--primary-color);
+text-align: center;
+font-size: 44px;
+font-weight: 900;
+line-height: 60px; 
+letter-spacing: 1.36;
+text-transform: uppercase;
+}
+
+.hero-btn{
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px; 
+  letter-spacing: 1.87;
+}
+
+/* про нашу сторінку */
+
+.aboutpage-title{
+  color: var(--max-text-color);
+font-size: 14px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.14;
+text-transform: uppercase;
+}
+
+.aboutpage-text{
+  color: var(--max-text-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71;
+letter-spacing: 0.42px;
+}
+
+/* Чим ми займаємось */
+
+.ourwork-title{
+  color: var(--max-text-color);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.16;
+}
+
+.ourwork-img {
+  width: 370px;
+height: 294px;
+flex-shrink: 0;
+}
+
+/* Наша команда */
+
+.aboutus-title{
+  color: var(--max-text-color);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.16;
+}
+
+.aboutus-image{
+  width: 270px;
+height: 260px;
+flex-shrink: 0;
+}
+
+.aboutus-heading{
+  color: var(--max-text-color);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 1.18;
+}
+
+.aboutus-text{
+  color: var(--max-text-color);
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.18;
+}
+
+/* footer */
+
+.footer-list:nth-child(1){
+  color: var(--primary-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.75; 
+letter-spacing: 0.42px;
+}
+
+.footer-list:nth-child(n+2){
+  color: var(--mini-text-footer-color);
+font-size: 14px;
+font-weight: 400;
+line-height: 1.71; 
+letter-spacing: 0.42px;
+}
