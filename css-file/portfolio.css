@@ -2,14 +2,13 @@
   --mini-text-color: #757575;
   --max-text-color: #212121;
   --primary-color: #ffffff;
-  --team-background-color: #f5f4fa;
   --header-footer-background-color: #2f303a;
   --button-backgrouhd-color: #2196f3;
   --logo-color: #000000;
   --mini-text-footer-color: rgba(255, 255, 255, 0.6);
 }
 
-body {
+body{
   font-family: Roboto;
 }
 
@@ -55,96 +54,37 @@ body {
   color: var(--button-backgrouhd-color);
 }
 
-/* Шапка сайту */
+/* наше портфоліо */
 
-.hero-title {
-  color: var(--primary-color);
-  text-align: center;
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 2.64px;
-  text-transform: uppercase;
-}
-
-.hero-btn {
-  color: var(--primary-color);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.96px;
-}
-
-/* про нашу сторінку */
-
-.aboutpage-title {
+.project-btn{
   color: var(--max-text-color);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.62; 
+letter-spacing: 0.48px;
 }
 
-.aboutpage-text {
-  color: var(--max-text-color);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
-  letter-spacing: 0.42px;
-}
-
-/* Чим ми займаємось */
-
-.ourwork-title {
-  color: var(--max-text-color);
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.08px;
-}
-
-.ourwork-img {
+.project-img{
   width: 370px;
   height: 294px;
   flex-shrink: 0;
 }
 
-/* Наша команда */
-
-.aboutus-title {
+.project-title{
   color: var(--max-text-color);
-  text-align: center;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  letter-spacing: 0.48px;
+font-size: 18px;
+font-weight: 700;
+line-height: 2; 
+letter-spacing: 1.08px;
 }
 
-.aboutus-image {
-  width: 270px;
-  height: 260px;
-  flex-shrink: 0;
-}
-
-.aboutus-heading {
+.project-text{
   color: var(--max-text-color);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.18;
-  letter-spacing: 0.48px;
-}
-
-.aboutus-text {
-  color: var(--max-text-color);
-  text-align: center;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.18;
-  letter-spacing: 0.48px;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.87; 
+letter-spacing: 0.48px;
 }
 
 /* footer */
@@ -172,3 +112,4 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
+
