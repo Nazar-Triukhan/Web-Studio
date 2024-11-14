@@ -3,9 +3,11 @@
   --max-text-color: #212121;
   --primary-color: #ffffff;
   --header-footer-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
   --button-backgrouhd-color: #2196f3;
   --logo-color: #000000;
   --mini-text-footer-color: rgba(255, 255, 255, 0.6);
+  --min-background-color: #ECECEC;
 }
 
 body{
@@ -54,6 +56,7 @@ body{
   color: var(--button-backgrouhd-color);
 }
 
+
 /* наше портфоліо */
 
 .project-btn{
@@ -63,6 +66,17 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62; 
 letter-spacing: 0.48px;
+width: 128px;
+height: 38px;
+flex-shrink: 0;
+border-radius: 4px;
+background: var(--team-background-color);
+}
+
+.project-btn:hover{
+  border-radius: 4px;
+background: var(--button-backgrouhd-color);
+color: var(--primary-color);
 }
 
 .project-img{
@@ -89,6 +103,13 @@ letter-spacing: 0.48px;
 
 /* footer */
 
+.footer {
+  background-color: var(--header-footer-background-color);
+  width: 1600px;
+height: 252px;
+flex-shrink: 0;
+}
+
 .footer-logo {
   font-family: Raleway;
   font-size: 26px;
@@ -96,6 +117,16 @@ letter-spacing: 0.48px;
   line-height: 1.38;
   letter-spacing: 0.78px;
 }
+
+.footer-Web {
+  color: var(--button-backgrouhd-color);
+}
+
+.footer-Studio {
+  color: var(--primary-color);
+}
+
+
 
 .footer-maps {
   color: var(--primary-color);
