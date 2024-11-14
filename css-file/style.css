@@ -149,7 +149,7 @@ body {
 
 /* footer */
 
-.footer-logo {
+.footer-logo  {
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -157,7 +157,7 @@ body {
   letter-spacing: 0.78px;
 }
 
-.footer-maps {
+.footer-maps  {
   color: var(--primary-color);
   font-size: 14px;
   font-weight: 400;
@@ -165,7 +165,7 @@ body {
   letter-spacing: 0.42px;
 }
 
-.footer-link {
+.footer-link  {
   color: var(--mini-text-footer-color);
   font-size: 14px;
   font-weight: 400;
