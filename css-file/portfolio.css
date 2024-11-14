@@ -66,9 +66,6 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.62; 
 letter-spacing: 0.48px;
-width: 128px;
-height: 38px;
-flex-shrink: 0;
 border-radius: 4px;
 background: var(--team-background-color);
 }
@@ -80,9 +77,6 @@ color: var(--primary-color);
 }
 
 .project-img{
-  width: 370px;
-  height: 294px;
-  flex-shrink: 0;
 }
 
 .project-title{
@@ -105,9 +99,7 @@ letter-spacing: 0.48px;
 
 .footer {
   background-color: var(--header-footer-background-color);
-  width: 1600px;
-height: 252px;
-flex-shrink: 0;
+
 }
 
 .footer-logo {
