@@ -7,10 +7,10 @@
   --button-backgrouhd-color: #2196f3;
   --logo-color: #000000;
   --mini-text-footer-color: rgba(255, 255, 255, 0.6);
-  --min-background-color: #ECECEC;
+  --min-background-color: #ececec;
 }
 
-body{
+body {
   font-family: Roboto;
 }
 
@@ -56,50 +56,45 @@ body{
   color: var(--button-backgrouhd-color);
 }
 
-
 /* наше портфоліо */
 
-.project-btn{
+.project-btn {
   color: var(--max-text-color);
-text-align: center;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.62; 
-letter-spacing: 0.48px;
-border-radius: 4px;
-background: var(--team-background-color);
-}
-
-.project-btn:hover{
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.48px;
   border-radius: 4px;
-background: var(--button-backgrouhd-color);
-color: var(--primary-color);
+  background: var(--team-background-color);
 }
 
-.project-img{
+.project-btn:hover {
+  border-radius: 4px;
+  background: var(--button-backgrouhd-color);
+  color: var(--primary-color);
 }
 
-.project-title{
+.project-title {
   color: var(--max-text-color);
-font-size: 18px;
-font-weight: 700;
-line-height: 2; 
-letter-spacing: 1.08px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1.08px;
 }
 
-.project-text{
+.project-text {
   color: var(--max-text-color);
-font-size: 16px;
-font-weight: 400;
-line-height: 1.87; 
-letter-spacing: 0.48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.48px;
 }
 
 /* footer */
 
 .footer {
   background-color: var(--header-footer-background-color);
-
 }
 
 .footer-logo {
@@ -118,8 +113,6 @@ letter-spacing: 0.48px;
   color: var(--primary-color);
 }
 
-
-
 .footer-maps {
   color: var(--primary-color);
   font-size: 14px;
@@ -135,4 +128,3 @@ letter-spacing: 0.48px;
   line-height: 1.71;
   letter-spacing: 0.42px;
 }
-
