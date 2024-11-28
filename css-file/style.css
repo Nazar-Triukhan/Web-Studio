@@ -10,6 +10,14 @@
   --button-hero-color: rgba(0, 0, 0, 0.15);
 }
 
+.conteiner{
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body {
   font-family: Roboto;
 }
