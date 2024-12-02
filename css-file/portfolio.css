@@ -10,7 +10,7 @@
   --min-background-color: #ececec;
 }
 
-.conteiner{
+.conteiner {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -24,7 +24,7 @@ body {
 
 /* навігація сайту */
 
-.header{
+.header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -71,6 +71,11 @@ body {
 
 /* наше портфоліо */
 
+.project {
+  padding-top: 75px;
+  padding-bottom: 113px;
+}
+
 .project-btn {
   color: var(--max-text-color);
   text-align: center;
@@ -108,6 +113,8 @@ body {
 
 .footer {
   background-color: var(--header-footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
