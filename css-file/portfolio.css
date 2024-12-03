@@ -71,13 +71,10 @@ body {
 
 /* наше портфоліо */
 
-.project-list{
-padding-top: 75px;
-padding-bottom: 50px;
-}
 
 .project {
-  padding-bottom: 113px;
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .project-btn {
