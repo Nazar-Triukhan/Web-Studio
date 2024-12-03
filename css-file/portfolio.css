@@ -71,8 +71,12 @@ body {
 
 /* наше портфоліо */
 
+.project-list{
+padding-top: 75px;
+padding-bottom: 50px;
+}
+
 .project {
-  padding-top: 75px;
   padding-bottom: 113px;
 }
 
