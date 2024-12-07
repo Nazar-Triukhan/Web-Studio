@@ -206,6 +206,9 @@ body {
    gap: 30px;
 }
 
+.aboutus-item{
+  background: var(--primary-color);
+}
 
 .aboutus-image {
   width: 270px;
@@ -220,15 +223,18 @@ body {
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.48px;
+  margin-top: 30px;
 }
 
 .aboutus-text {
-  color: var(--max-text-color);
+  color: var(--mini-text-color);
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.48px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /* footer */

@@ -29,6 +29,11 @@ body {
   padding-bottom: 25px;
 }
 
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   font-family: Raleway;
   font-size: 26px;
@@ -43,6 +48,18 @@ body {
 
 .Studio {
   color: var(--logo-color);
+}
+
+.header-list {
+  display: flex;
+  gap: 50px;
+  padding-left: 93px;
+}
+
+.header-items {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
 }
 
 .header-contact {
@@ -68,6 +85,7 @@ body {
 .header-link:hover {
   color: var(--button-backgrouhd-color);
 }
+
 
 /* наше портфоліо */
 
@@ -112,6 +130,8 @@ padding-bottom: 94px;
 
 /* footer */
 
+/* footer */
+
 .footer {
   background-color: var(--header-footer-background-color);
   padding-top: 60px;
@@ -132,6 +152,11 @@ padding-bottom: 94px;
 
 .footer-Studio {
   color: var(--primary-color);
+}
+
+.footer-list{
+  margin-top: 20px;
+  gap: 9px;
 }
 
 .footer-maps {
