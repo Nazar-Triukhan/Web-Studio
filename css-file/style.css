@@ -103,6 +103,8 @@ body {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  text-align: center;
 }
 
 .hero-text{
@@ -180,8 +182,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
-  display: flex;
-  justify-content: space-between;
+}
+
+.ourwork-img{
+  width: 370px;
+  height: 294px;
+  flex-shrink: 0;
 }
 
 /* Наша команда */
@@ -208,7 +214,6 @@ body {
    display: flex;
    justify-content: center;
    gap: 30px;
-   justify-content: space-between;
 }
 
 .aboutus-item{
@@ -266,8 +271,12 @@ body {
   color: var(--primary-color);
 }
 
-.footer-list{
+.footer-address{
   margin-top: 20px;
+}
+
+.footer-list{
+  font-style: normal;
   gap: 9px;
 }
 
@@ -285,4 +294,8 @@ body {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
+}
+
+.footer-item:nth-last-child(-n+2){
+  margin-top: 9px;
 }
