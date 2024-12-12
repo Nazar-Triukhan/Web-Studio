@@ -10,8 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css-file/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css-file/reset.css" />
     <link rel="stylesheet" href="./css-file/portfolio.css" />
   </head>
   <body>
@@ -53,87 +53,133 @@
       <!-- наше портфоліо -->
       <section class="project">
         <div class="conteiner">
-        <ul class="project-list">
-          <li class="project-element"><button type="button" class="project-btn">Усі</button></li>
-          <li class="project-element"><button type="button" class="project-btn">Веб-сайти</button></li>
-          <li class="project-element"><button type="button" class="project-btn">Додатки</button></li>
-          <li class="project-element"><button type="button" class="project-btn">Дизайн</button></li>
-          <li class="project-element"><button type="button" class="project-btn">Маркетинг</button></li>
-        </ul>
-       
-        <!-- Наші проекти та інше -->
-        <ul class="project-item">
-          <div class="project-background">
-          <li class="project-items">
-            <img src="./image/tehnokryak.jpg" alt="Технокряк"  class="project-img"/>
-            <h2 class="project-title">Технокряк</h2>
-            <p class="project-text">Веб-сайти</p>
-          </li>
-          </div>
-          <div class="project-background">
-          <li class="project-items">
-            <img
-              src="./image/new-Orlean-vs-Golden-Star.png"
-              alt="Постер New Orlean vs Golden Star" class="project-img"/>
-            <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
-            <p class="project-text">Дизайн</p>
-          </li>
+          <ul class="project-list">
+            <li class="project-element">
+              <button type="button" class="project-btn">Усі</button>
+            </li>
+            <li class="project-element">
+              <button type="button" class="project-btn">Веб-сайти</button>
+            </li>
+            <li class="project-element">
+              <button type="button" class="project-btn">Додатки</button>
+            </li>
+            <li class="project-element">
+              <button type="button" class="project-btn">Дизайн</button>
+            </li>
+            <li class="project-element">
+              <button type="button" class="project-btn">Маркетинг</button>
+            </li>
+          </ul>
+
+          <!-- Наші проекти та інше -->
+          <ul class="project-item">
+            <li class="project-items">
+              <img
+                src="./image/tehnokryak.jpg"
+                alt="Технокряк"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Технокряк</h2>
+                <p class="project-text">Веб-сайти</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img
+                src="./image/new-Orlean-vs-Golden-Star.png"
+                alt="Постер New Orlean vs Golden Star"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Постер New Orlean vs Golden Star</h2>
+                <p class="project-text">Дизайн</p>
+              </div>
+            </li>
+            <li class="project-items">
+              <img
+                src="./image/seafood.png"
+                alt="Ресторан Seafood"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Ресторан Seafood</h2>
+                <p class="project-text">Додаток</p>
+              </div>
+            </li>
+
+            <li class="project-items">
+              <img
+                src="./image/prodgeckt-Prime.png"
+                alt="Проект Prime"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Проект Prime</h2>
+                <p class="project-text">Маркетинг</p>
+              </div>
+            </li>
+
+            <li class="project-items">
+              <img
+                src="./image/prodjeks-box.png"
+                alt="Проект Boxes"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Проект Boxes</h2>
+                <p class="project-text">Додаток</p>
+              </div>
+            </li>
+
+            <li class="project-items">
+              <img
+                src="./image/inspiration-has-no-Borders.png"
+                alt="Inspiration has no Borders"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Inspiration has no Borders</h2>
+                <p class="project-text">Веб-сайти</p>
+              </div>
+            </li>
+
+            <li class="project-items">
+              <img
+                src="./image/limited-Edition.png"
+                alt="Изданиe Limited Edition"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Издание Limited Edition</h2>
+                <p class="project-text">Дизайн</p>
+              </div>
+            </li>
+
+            <li class="project-items">
+              <img
+                src="./image/projekt-LAB.png"
+                alt="Проект LAB"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Проект LAB</h2>
+                <p class="project-text">Маркетинг</p>
+              </div>
+            </li>
+
+            <li class="project-items">
+              <img
+                src="./image/growing-Business.png"
+                alt="Growing Business"
+                class="project-img"
+              />
+              <div class="project-background">
+                <h2 class="project-title">Growing Business</h2>
+                <p class="project-text">Додаток</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="project-background">
-          <li class="project-items">
-            <img src="./image/seafood.png" alt="Ресторан Seafood"  class="project-img"/>
-            <h2 class="project-title">Ресторан Seafood</h2>
-            <p class="project-text">Додаток</p>
-          </li>
-        </div>
-        <div class="project-background">
-          <li class="project-items">
-            <img src="./image/prodgeckt-Prime.png" alt="Проект Prime"  class="project-img"/>
-            <h2 class="project-title">Проект Prime</h2>
-            <p class="project-text">Маркетинг</p>
-          </li>
-        </div>
-        <div class="project-background">
-          <li class="project-items">
-            <img src="./image/prodjeks-box.png" alt="Проект Boxes"  class="project-img"/>
-            <h2 class="project-title">Проект Boxes</h2>
-            <p class="project-text">Додаток</p>
-          </li>
-        </div>
-        <div class="project-background">
-          <li class="project-items">
-            <img
-              src="./image/inspiration-has-no-Borders.png"
-              alt="Inspiration has no Borders" class="project-img"/>
-            <h2 class="project-title">Inspiration has no Borders</h2>
-            <p class="project-text">Веб-сайти</p>
-          </li>
-        </div>
-        <div class="project-background">
-          <li class="project-items">
-            <img
-              src="./image/limited-Edition.png"
-              alt="Изданиe Limited Edition" class="project-img"/>
-            <h2 class="project-title">Издание Limited Edition</h2>
-            <p class="project-text">Дизайн</p>
-          </li>
-        </div>
-        <div class="project-background">
-          <li class="project-items">
-            <img src="./image/projekt-LAB.png" alt="Проект LAB" class="project-img"/>
-            <h2 class="project-title">Проект LAB</h2>
-            <p class="project-text">Маркетинг</p>
-          </li>
-          </div>
-          <div class="project-background">
-          <li class="project-items">
-            <img src="./image/growing-Business.png" alt="Growing Business" class="project-img"/>
-            <h2 class="project-title">Growing Business</h2>
-            <p class="project-text">Додаток</p>
-          </li>
-        </div>
-        </ul>
-      </div>
       </section>
     </main>
     <!-- footer -->

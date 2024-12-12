@@ -87,9 +87,8 @@ body {
 }
 
 .header-line{
-  border-top: 1px solid var(--min-background-color);
+  outline: 1px solid var(--min-background-color);
   margin-top: 25px;
-
 }
 
 
@@ -112,6 +111,7 @@ padding-bottom: 94px;
   color: var(--max-text-color);
   padding: 6px 22px;
   text-align: center;
+  border: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
@@ -135,6 +135,9 @@ padding-bottom: 94px;
 .project-background{
   background-color: var(--primary-color);
   border: 1px solid #EEE;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .project-img{
@@ -147,8 +150,6 @@ padding-bottom: 94px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 1.08px;
-  margin-top: 20px;
-  margin-left: 24px;
 }
 
 .project-text {
@@ -158,8 +159,6 @@ padding-bottom: 94px;
   line-height: 1.87;
   letter-spacing: 0.48px;
   margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
 }
 
 
