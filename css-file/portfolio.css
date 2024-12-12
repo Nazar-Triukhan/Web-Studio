@@ -27,6 +27,7 @@ body {
 
 .header {
   padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-box {
@@ -86,18 +87,14 @@ body {
   color: var(--button-backgrouhd-color);
 }
 
-.header-line{
-  outline: 1px solid var(--min-background-color);
-  margin-top: 25px;
-}
-
-
 /* наше портфоліо */
+
 
 
 .project {
 padding-top: 94px;
 padding-bottom: 94px;
+border-top: 1px solid var(--min-background-color);
 }
 
 .project-list{
