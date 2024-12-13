@@ -220,6 +220,11 @@ body {
   background: var(--primary-color);
 }
 
+.aboutus-background{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .aboutus-image {
   width: 270px;
   height: 260px;
@@ -233,7 +238,6 @@ body {
   font-weight: 500;
   line-height: 1.18;
   letter-spacing: 0.48px;
-  margin-top: 30px;
 }
 
 .aboutus-text {
@@ -244,7 +248,6 @@ body {
   line-height: 1.18;
   letter-spacing: 0.48px;
   margin-top: 10px;
-  margin-bottom: 30px;
 }
 
 /* footer */
