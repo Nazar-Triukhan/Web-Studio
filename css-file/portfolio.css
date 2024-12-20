@@ -127,6 +127,11 @@ border-top: 1px solid var(--min-background-color);
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+}
+
+.project-items{
+    flex-basis: calc((100% - 60px)/3);
 }
 
 .project-background{
@@ -136,7 +141,7 @@ border-top: 1px solid var(--min-background-color);
 }
 
 .project-img{
-  width: 370px;
+  width: 100%;
 }
 
 .project-title {
