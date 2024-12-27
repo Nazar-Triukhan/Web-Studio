@@ -142,6 +142,44 @@ body {
   gap: 30px;
 }
 
+.aboutpage-item::before{
+  content: '';
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: var(--team-background-color);
+  margin-bottom: 30px;
+  display: block;
+}
+
+.aboutpage-item:nth-child(1)::before{
+  content: '';
+  background-image: url('../image/antenna.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutpage-item:nth-child(2)::before{
+  content: '';
+  background-image: url('../image/clock.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutpage-item:nth-child(3)::before{
+  content: '';
+  background-image: url('../image/diagram.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.aboutpage-item:nth-child(4)::before{
+  content: '';
+  background-image: url('../image/astronaut.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .aboutpage-title {
   color: var(--max-text-color);
   font-size: 14px;
