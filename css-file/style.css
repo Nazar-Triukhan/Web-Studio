@@ -154,28 +154,28 @@ body {
 
 .aboutpage-item:nth-child(1)::before{
   content: '';
-  background-image: url('../image/antenna.png');
+  background-image: url('../image/antena.webp');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .aboutpage-item:nth-child(2)::before{
   content: '';
-  background-image: url('../image/clock.png');
+  background-image: url('../image/clock.webp');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .aboutpage-item:nth-child(3)::before{
   content: '';
-  background-image: url('../image/diagram.png');
+  background-image: url('../image/diagram.webp');
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .aboutpage-item:nth-child(4)::before{
   content: '';
-  background-image: url('../image/astronaut.png');
+  background-image: url('../image/astronaut.webp');
   background-repeat: no-repeat;
   background-position: center;
 }
