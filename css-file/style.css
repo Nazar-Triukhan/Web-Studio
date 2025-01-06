@@ -92,6 +92,7 @@ body {
   background-color: var(--header-footer-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../image/shapka.webp);
 }
 
 .hero-title {
