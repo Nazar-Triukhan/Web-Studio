@@ -94,6 +94,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: url(../image/shapka.webp);
+  background: linear-gradient(rgba(47, 48, 58, 0.40), rgba(47, 48, 58, 0.40)), url(../image/shapka.webp);
 }
 
 .hero-title {
@@ -259,6 +260,7 @@ body {
 .aboutus-item{
   background: var(--primary-color);
   box-shadow: var(--box-shadow-color);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .aboutus-background{

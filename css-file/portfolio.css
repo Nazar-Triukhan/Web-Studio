@@ -10,6 +10,7 @@
   --min-background-color: #ececec;
   --background-border-color: #EEEEEE;
   --box-shadow-portfolio-color: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+  --box-shadow-btn-color: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .conteiner {
@@ -122,6 +123,7 @@ border-top: 1px solid var(--min-background-color);
   border-radius: 4px;
   background: var(--button-backgrouhd-color);
   color: var(--primary-color);
+  box-shadow: var(--box-shadow-btn-color);
 }
 
 .project-item{
@@ -133,7 +135,11 @@ border-top: 1px solid var(--min-background-color);
 
 .project-items{
     flex-basis: calc((100% - 60px)/3);
-    box-shadow: var(--box-shadow-portfolio-color);
+
+}
+
+.project-items:hover{
+      box-shadow: var(--box-shadow-portfolio-color);
 }
 
 .project-background{
