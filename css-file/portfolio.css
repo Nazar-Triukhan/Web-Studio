@@ -9,6 +9,7 @@
   --mini-text-footer-color: rgba(255, 255, 255, 0.6);
   --min-background-color: #ececec;
   --background-border-color: #EEEEEE;
+  --box-shadow-portfolio-color: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .conteiner {
@@ -132,6 +133,7 @@ border-top: 1px solid var(--min-background-color);
 
 .project-items{
     flex-basis: calc((100% - 60px)/3);
+    box-shadow: var(--box-shadow-portfolio-color);
 }
 
 .project-background{
