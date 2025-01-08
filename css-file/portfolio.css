@@ -125,7 +125,7 @@ border-top: 1px solid var(--min-background-color);
   background: var(--button-backgrouhd-color);
   color: var(--primary-color);
   box-shadow: var(--box-shadow-btn-color); 
-   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .project-item{
