@@ -117,14 +117,15 @@ border-top: 1px solid var(--min-background-color);
   letter-spacing: 0.48px;
   border-radius: 4px;
   background: var(--team-background-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 .project-btn:hover {
   border-radius: 4px;
   background: var(--button-backgrouhd-color);
   color: var(--primary-color);
-  box-shadow: var(--box-shadow-btn-color);
+  box-shadow: var(--box-shadow-btn-color); 
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .project-item{
