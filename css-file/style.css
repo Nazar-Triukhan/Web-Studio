@@ -79,12 +79,21 @@ body {
   letter-spacing: 0.28px;
 }
 
+.header-icon{
+  width: 16px;
+  height: 12px;
+  fill: var(--mini-text-color);
+}
+
 .header-contact:hover {
   color: var(--button-backgrouhd-color);
 }
 
 .header-link:hover {
   color: var(--button-backgrouhd-color);
+  .header-icon{
+    fill: var(--button-backgrouhd-color);
+  }
 }
 
 /* Шапка сайту */
@@ -293,12 +302,94 @@ body {
   margin-top: 10px;
 }
 
+.aboutus-box{
+display: flex;
+gap: 10px;
+justify-content: center;
+}
+
+
+
+.aboutus-icon{
+  width: 20px;
+height: 20px;
+fill: #AFB1B8;
+display: flex;
+}
+
+.aboutus-internet{
+  width: 44px;
+  height: 44px;
+  background-color: var(--primary-color);
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.aboutus-internet:hover{
+  background-color: var(--button-backgrouhd-color);
+  .aboutus-icon{
+    fill: var(--primary-color);
+  }
+}
+/* client */
+
+.client{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-title{
+  color:var(--logo-color);
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+letter-spacing: 1.2;
+}
+
+.client-list{
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.client-item{
+
+}
+
+.client-link{
+  border: solid 1px #AFB1B8;
+border-radius: 4px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 16px 32px;
+}
+
+.client-link:hover{
+border-color: var(--button-backgrouhd-color);
+   .client-icon{
+    fill: var(--button-backgrouhd-color);
+   }
+}
+
+.client-icon{
+  width: 106px;
+height: 60px;
+fill: #AFB1B8;
+}
 /* footer */
 
 .footer {
   background-color: var(--header-footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-box{
+  display: flex;
 }
 
 .footer-logo {
@@ -344,4 +435,43 @@ body {
 
 .footer-item:nth-last-child(-n+2){
   margin-top: 9px;
+}
+
+.footer-boxx{
+  margin-left: 70px;
+  margin-top: 12px;
+}
+
+.footer-title{
+  color: var(--primary-color);
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.footer-items{
+  display: flex;
+  gap: 10px;
+}
+
+.footer-internet{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-internet:hover{
+background-color: var(--button-backgrouhd-color);
+}
+
+.footer-icon{
+  width: 20px;
+height: 20px;
+fill: var(--primary-color);
 }
