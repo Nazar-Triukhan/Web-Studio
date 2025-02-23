@@ -59,7 +59,7 @@ body {
 
 .header-items {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   margin-left: auto;
 }
 
@@ -83,6 +83,12 @@ body {
   width: 16px;
   height: 12px;
   fill: var(--mini-text-color);
+  margin-right: 10px;
+}
+
+.header-icon:nth-child(2){
+  width: 10px;
+height: 16px;
 }
 
 .header-contact:hover {
@@ -306,6 +312,8 @@ body {
 display: flex;
 gap: 10px;
 justify-content: center;
+margin-top: 16px;
+
 }
 
 
@@ -321,7 +329,6 @@ display: flex;
   width: 44px;
   height: 44px;
   background-color: var(--primary-color);
-  margin-top: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,8 +358,8 @@ letter-spacing: 1.2;
 
 .client-list{
   display: flex;
-  gap: 30px;
   margin-top: 50px;
+  justify-content: space-between;
 }
 
 .client-item{
@@ -390,6 +397,7 @@ fill: #AFB1B8;
 
 .footer-box{
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -439,7 +447,6 @@ fill: #AFB1B8;
 
 .footer-boxx{
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .footer-title{
