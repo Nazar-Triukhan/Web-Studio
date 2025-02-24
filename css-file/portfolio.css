@@ -79,6 +79,8 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  display: flex;
+  align-items: center;
 }
 
 .header-icon{
@@ -86,6 +88,11 @@ body {
   height: 12px;
   fill: var(--mini-text-color);
   margin-right: 10px;
+}
+
+.header-elemet:last-child .header-icon {
+  width: 10px;
+  height: 16px;
 }
 
 .header-contact:hover {
