@@ -61,7 +61,7 @@ body {
 
 .header-items {
   display: flex;
-  gap: 50px;
+  gap: 30px;
   margin-left: auto;
 }
 
@@ -81,13 +81,24 @@ body {
   letter-spacing: 0.28px;
 }
 
+.header-icon{
+  width: 16px;
+  height: 12px;
+  fill: var(--mini-text-color);
+  margin-right: 10px;
+}
+
 .header-contact:hover {
   color: var(--button-backgrouhd-color);
 }
 
 .header-link:hover {
   color: var(--button-backgrouhd-color);
+  .header-icon{
+    fill: var(--button-backgrouhd-color);
+  }
 }
+
 
 /* наше портфоліо */
 
@@ -180,6 +191,11 @@ border-top: 1px solid var(--min-background-color);
   padding-bottom: 60px;
 }
 
+.footer-box{
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-logo {
   font-family: Raleway;
   font-size: 26px;
@@ -223,4 +239,42 @@ border-top: 1px solid var(--min-background-color);
 
 .footer-item:nth-last-child(-n+2){
   margin-top: 9px;
+}
+
+.footer-boxx{
+  margin-left: 70px;
+}
+
+.footer-title{
+  color: var(--primary-color);
+font-size: 14px;
+font-weight: 700;
+letter-spacing: 0.42px;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.footer-items{
+  display: flex;
+  gap: 10px;
+}
+
+.footer-internet{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-internet:hover{
+background-color: var(--button-backgrouhd-color);
+}
+
+.footer-icon{
+  width: 20px;
+height: 20px;
+fill: var(--primary-color);
 }
