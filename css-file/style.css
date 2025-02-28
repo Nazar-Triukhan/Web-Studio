@@ -242,10 +242,26 @@ body {
   gap: 30px;
 }
 
+.ourwork-item{
+  position: relative;
+}
+
 .ourwork-img{
   width: 370px;
   height: 294px;
-  flex-shrink: 0;
+}
+
+.ourwork-text{
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+padding: 27px 113px;
+background: rgba(47, 48, 58, 0.80);
+position: absolute;
+top: 224px;
+
 }
 
 /* Наша команда */
