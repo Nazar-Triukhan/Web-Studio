@@ -257,12 +257,22 @@ body {
   font-size: 14px;
   font-weight: 700;
   width: 100%;
-padding: 27px 113px;
 background: rgba(47, 48, 58, 0.80);
 position: absolute;
 top: 224px;
-
 }
+
+.ourwork-item:first-child .ourwork-text{
+padding: 27px 107px;
+}
+
+.ourwork-item:nth-child(2) .ourwork-text{
+  padding: 27px 113px;
+}
+
+.ourwork-item:last-child .ourwork-text{
+  padding: 27px 95px;
+  }
 
 /* Наша команда */
 
