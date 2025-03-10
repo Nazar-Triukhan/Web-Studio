@@ -57,7 +57,7 @@
       <section class="hero">
         <div class="conteiner hero-box">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послуги</button>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послуги</button>
         </div>
       </section>
       <!-- про нашу сторінку  -->
@@ -396,6 +396,36 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close><svg class="modal-icon_close"><use href="./image/symbol-defs.svg#icon-close"></use></svg></button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label class="modal-label">Ім'я
+            <!-- <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-person"></use></svg> -->
+            <input type="text" class="modal-input">
+          </label>
+          <label class="modal-label">Телефон
+            <!-- <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-person"></use></svg> -->
+            <input type="text" class="modal-input">
+          </label>
+          <label class="modal-label">Пошта
+            <!-- <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-person"></use></svg> -->
+            <input type="text" class="modal-input">
+          </label>
+          <label class="modal-label" >Коментар
+            <textarea class="modal-comment" placeholder="Введіть текст"></textarea>
+          </label>
+        </form>
+        <label class="custom-checkbox">
+          <input type="checkbox" class="modal-checbox">
+          <span class="modal-checkmark"> Погоджуюся з розсилкою та приймаю</span>
+          <a href="#" class="modal-dogovor">Умови договору</a>
+        </label>
+        <div class="modal-button"><button class="modal-send" type="button">Відправити</button></div>
+      </div>
+     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
 
