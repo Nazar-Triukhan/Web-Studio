@@ -592,8 +592,6 @@ body {
   pointer-events: none;
 }
 .modal-close {
-  width: 30px;
-  height: 30px;
   background-color: transparent;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -603,16 +601,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 6px;
+}
+
+.modal-close:hover {
+  .modal-icon_close {
+  fill: var(--button-backgrouhd-color);
+  }
 }
 
 .modal-icon_close {
   width: 18px;
   height: 18px;
+
 }
 
-.modal-icon_close:hover {
-  fill: var(--button-backgrouhd-color);
-}
+
 
 .modal-title {
   color: #212121;
@@ -634,6 +638,7 @@ body {
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
+  position: relative;
 }
 
 .modal-input {
@@ -647,9 +652,31 @@ body {
   padding-left: 42px;
 }
 
+.modal-input:hover ,
+.modal-input:focus{
+  border: none;
+  outline: 1px solid var(--button-backgrouhd-color);
+}
+
+.modal-comment:hover , 
+.modal-comment:focus {
+  border: none;
+  outline: 1px solid var(--button-backgrouhd-color);
+}
+
+
 .modal-icon_person {
   width: 18px;
   height: 18px;
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  fill: var(--max-text-color);
+}
+
+.modal-input:hover + .modal-icon_person ,
+.modal-input:focus + .modal-icon_person{
+  fill: var(--button-backgrouhd-color);
 }
 
 .modal-comment {

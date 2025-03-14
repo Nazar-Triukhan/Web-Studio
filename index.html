@@ -26,9 +26,9 @@
     <!-- Навігація сайту -->
     <header class="header">
       <div class="conteiner header-box">
-        <a href="./index.html" class="header-logo"
-          ><span class="Web">Web</span><span class="Studio">Studio</span></a
-        >
+        <a href="./index.html" class="header-logo">
+          <span class="Web">Web</span><span class="Studio">Studio</span>
+        </a>
         <nav class="header-navigation">
           <ul class="header-list">
             <li class="header-item">
@@ -46,14 +46,18 @@
           <li class="header-elemet">
             <a href="mailto:info@devstudio.com" class="header-link">
               <svg class="header-icon">
-                <use href="./image/symbol-defs.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
+                <use href="./image/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
           </li>
           <li class="header-elemet">
             <a href="tel:+380961111111" class="header-link">
               <svg class="header-icon">
-                <use href="./image/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+                <use href="./image/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
       </div>
@@ -460,18 +464,18 @@
         <form class="modal-form">
           <label class="modal-label"
             >Ім'я
-            <!-- <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-person"></use></svg> -->
-            <input type="text" class="modal-input" />
+            <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-person"></use></svg>
+            <input required type="text" class="modal-input" />
           </label>
           <label class="modal-label"
             >Телефон
-            <!-- <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-person"></use></svg> -->
-            <input type="text" class="modal-input" />
+            <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-phone"></use></svg>
+            <input required type="tel" class="modal-input" pattern="^+380\d{9}$">
           </label>
           <label class="modal-label"
             >Пошта
-            <!-- <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-person"></use></svg> -->
-            <input type="text" class="modal-input" />
+            <svg class="modal-icon_person"><use href="./image/symbol-defs.svg#icon-email"></use></svg>
+            <input required type="email" class="modal-input" />
           </label>
           <label class="modal-label"
             >Коментар
@@ -481,17 +485,15 @@
             ></textarea>
           </label>
           <label class="custom-checkbox">
-            <input type="checkbox" class="modal-checbox" />
+            <input required type="checkbox" class="modal-checbox" />
             <span class="modal-checkmark">
               Погоджуюся з розсилкою та приймаю</span
             >
             <a href="#" class="modal-dogovor">Умови договору</a>
           </label>
-          <label class="modal-label">
             <div class="modal-button">
-              <button class="modal-send" type="button">Відправити</button>
+              <button class="modal-send" type="submit">Відправити</button>
             </div>
-          </label>
         </form>
       </div>
     </div>
