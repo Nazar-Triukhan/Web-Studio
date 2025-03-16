@@ -155,17 +155,39 @@ border-top: 1px solid var(--min-background-color);
 
 .project-items{
     flex-basis: calc((100% - 60px)/3);
-
 }
 
 .project-items:hover{
       box-shadow: var(--box-shadow-portfolio-color);
+      .project-paragraf{
+        opacity: 1;
+      }
 }
 
 .project-background{
   background-color: var(--primary-color);
   border: 1px solid #EEE;
   padding: 20px 24px;
+}
+
+.project-box{
+  position: relative;
+}
+
+.project-paragraf{
+  color: var(--primary-color);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.54px;
+position: absolute;
+top: 0;
+right: 0;
+background-color:rgba(33, 150, 243, 0.90);
+padding: 63px 24px;
+height: 100%;
+opacity: 0;
 }
 
 .project-img{
