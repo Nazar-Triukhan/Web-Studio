@@ -30,6 +30,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+
 }
 
 .header-box {
@@ -75,6 +76,9 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact::after{
@@ -87,8 +91,10 @@ body {
   bottom: -30px;
   position: absolute;
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 .header-contact:hover::after{
   opacity: 1;
@@ -102,13 +108,19 @@ body {
   letter-spacing: 0.28px;
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-icon{
+.header-icon {
   width: 16px;
   height: 12px;
   fill: var(--mini-text-color);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-elemet:last-child .header-icon {
@@ -122,11 +134,10 @@ body {
 
 .header-link:hover {
   color: var(--button-backgrouhd-color);
-  .header-icon{
+  .header-icon {
     fill: var(--button-backgrouhd-color);
   }
 }
-
 
 /* наше портфоліо */
 
@@ -156,7 +167,9 @@ border-top: 1px solid var(--min-background-color);
   letter-spacing: 0.48px;
   border-radius: 4px;
   background: var(--team-background-color);
-
+  transition-property: color , background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-btn:hover {
@@ -165,6 +178,9 @@ border-top: 1px solid var(--min-background-color);
   color: var(--primary-color);
   box-shadow: var(--box-shadow-btn-color); 
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-item{
@@ -180,8 +196,14 @@ border-top: 1px solid var(--min-background-color);
 
 .project-items:hover{
       box-shadow: var(--box-shadow-portfolio-color);
-      .project-paragraf{
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+      ; .project-paragraf{
         opacity: 1;
+        transition-property: opacity;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       }
 }
 
@@ -322,6 +344,9 @@ opacity: 0;
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-internet:hover {

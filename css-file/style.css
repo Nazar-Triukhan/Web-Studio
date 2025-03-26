@@ -75,6 +75,9 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact::after{
@@ -87,6 +90,9 @@ body {
   bottom: -30px;
   position: absolute;
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contact:hover::after{
@@ -101,6 +107,9 @@ body {
   letter-spacing: 0.28px;
   display: flex;
   align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon {
@@ -108,6 +117,9 @@ body {
   height: 12px;
   fill: var(--mini-text-color);
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-elemet:last-child .header-icon {
@@ -371,6 +383,9 @@ body {
   height: 20px;
   fill: #afb1b8;
   display: flex;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .aboutus-internet {
@@ -381,6 +396,9 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .aboutus-internet:hover {
@@ -420,6 +438,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 16px 32px;
+  transition-property: border;
+  transition-duration: 2500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover {
@@ -433,6 +454,9 @@ body {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* footer */
 
@@ -523,6 +547,9 @@ body {
   align-items: center;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-internet:hover {
@@ -628,7 +655,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 6px;
+  padding: 4px;
 }
 
 .modal-close:hover {
@@ -640,7 +667,10 @@ body {
 .modal-icon_close {
   width: 18px;
   height: 18px;
-
+  fill: #000000;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -677,6 +707,9 @@ body {
   margin-top: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover ,
@@ -700,10 +733,14 @@ body {
 .modal-icon_person {
   width: 18px;
   height: 18px;
+  color: #000000;
   position: absolute;
   top: 30px;
   left: 12px;
   fill: var(--max-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover + .modal-icon_person ,
@@ -719,6 +756,9 @@ body {
   resize: none;
   padding: 12px 16px;
   margin-top: 4px;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkmark {
