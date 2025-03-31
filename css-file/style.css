@@ -641,8 +641,8 @@ body {
   padding: 40px;
   transform: scale(1);
   transition-property: transform;
-  transition-duration: 500ms;
-  transition-timing-function: ease-in;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden .modal{
