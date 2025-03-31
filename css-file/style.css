@@ -639,6 +639,14 @@ body {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   padding: 40px;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in;
+}
+
+.is-hidden .modal{
+  transform: scale(0);
 }
 
 .is-hidden {
