@@ -192,6 +192,7 @@ border-top: 1px solid var(--min-background-color);
 
 .project-items{
     flex-basis: calc((100% - 60px)/3);
+    
 }
 
 .project-items:hover{
@@ -202,9 +203,9 @@ border-top: 1px solid var(--min-background-color);
        .project-paragraf{
         opacity: 1;
         transform: translateY(0);
-        transition-property: opacity;
+        /* transition-property: opacity;
         transition-duration: 300ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
       }
 }
 
