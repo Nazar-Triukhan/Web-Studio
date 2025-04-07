@@ -45,24 +45,61 @@ body {
   letter-spacing: 0.28px;
 }
 
-.Web {
+.Web { 
   color: var(--button-backgrouhd-color);
+  display: inline-block;
+  animation: move-logo-left 700ms ease-out;
+}
+
+@keyframes move-logo-left {
+  0% {
+    transform: translateX(-100px) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
 }
 
 .Studio {
   color: var(--logo-color);
+  display: inline-block;
+  animation: move-logo-right 700ms ease-out;
+}
+
+@keyframes move-logo-right {
+  0% {
+    transform: translateX(100px) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
 }
 
 .header-list {
   display: flex;
   gap: 50px;
   margin-left: 93px;
+  animation: move-list 700ms;
+}
+
+@keyframes move-list{
+  0%{
+    transform: translate(0,-200px) scale(0);
+  }
+  100%{
+    transform: translate(0,0) scale(1);
+  }
 }
 
 .header-items {
   display: flex;
   gap: 30px;
   margin-left: auto;
+  animation: move-list 700ms;
 }
 
 .header-item{
@@ -160,6 +197,19 @@ body {
   margin-right: auto;
   display: flex;
   text-align: center;
+  animation: move-text-hero 700ms;
+}
+
+@keyframes move-text-hero{
+  0%{
+    transform:  scale(0);
+  }
+  50%{
+    transform: scale(1.5);
+  }
+  100%{
+    transform:  scale(1);
+  }
 }
 
 .hero-text {
@@ -183,6 +233,32 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  animation: move-button 4000ms infinite alternate,
+  move-btn-hero 700ms;
+  animation-timing-function: ease-in;
+}
+
+@keyframes move-btn-hero{
+  0%{
+    transform: translate(0,200px) scale(0);
+  }
+  100%{
+    transform: translate(0,0) scale(1);
+  }
+}
+
+@keyframes move-button {
+  0%{
+    background-color: #2196f3;
+    transform: scale(0.95);
+  }
+  50%{
+    background-color: #124a78;
+  }
+  100%{
+    background-color: #2196f3;
+    transform: scale(1.01);
+  }
 }
 
 /* про нашу сторінку */
@@ -439,7 +515,7 @@ body {
   justify-content: center;
   padding: 16px 32px;
   transition-property: border;
-  transition-duration: 2500ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -609,6 +685,30 @@ body {
   margin-left: 12px;
   display: flex;
   align-items: center;
+
+  animation: rotate-btn 1000ms infinite alternate ease-in, 
+  color-change 3000ms infinite alternate ease-in;
+}
+
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(-3deg);
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #2196f3;
+  }
+  50% {
+    background-color: #124a78;
+  }
+  100% {
+    background-color: #0e2b45;
+  }
 }
 
 .footer-icon_person {
@@ -821,4 +921,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: modal-btn 500ms infinite alternate;
+  animation-timing-function: ease-in;
+}
+
+@keyframes modal-btn{
+  0%{
+   transform: scale(1);
+  }
+  100%{
+    transform: scale(1.1);
+  }
 }

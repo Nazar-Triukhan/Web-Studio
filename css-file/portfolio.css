@@ -46,24 +46,61 @@ body {
   letter-spacing: 0.28px;
 }
 
-.Web {
+.Web { 
   color: var(--button-backgrouhd-color);
+  display: inline-block;
+  animation: move-logo-left 700ms ease-out;
+}
+
+@keyframes move-logo-left {
+  0% {
+    transform: translateX(-100px) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
 }
 
 .Studio {
   color: var(--logo-color);
+  display: inline-block;
+  animation: move-logo-right 700ms ease-out;
+}
+
+@keyframes move-logo-right {
+  0% {
+    transform: translateX(100px) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
 }
 
 .header-list {
   display: flex;
   gap: 50px;
   margin-left: 93px;
+  animation: move-list 700ms;
+}
+
+@keyframes move-list{
+  0%{
+    transform: translate(0,-200px) scale(0);
+  }
+  100%{
+    transform: translate(0,0) scale(1);
+  }
 }
 
 .header-items {
   display: flex;
   gap: 30px;
   margin-left: auto;
+  animation: move-list 700ms;
 }
 
 .header-item{
@@ -167,9 +204,21 @@ border-top: 1px solid var(--min-background-color);
   letter-spacing: 0.48px;
   border-radius: 4px;
   background: var(--team-background-color);
+
   transition-property: color , background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  animation: project-btn 700ms;
+}
+
+@keyframes project-btn{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 .project-btn:hover {
@@ -190,9 +239,20 @@ border-top: 1px solid var(--min-background-color);
 
 }
 
+
+
 .project-items{
     flex-basis: calc((100% - 60px)/3);
-    
+    animation: project-item 700ms;
+}
+
+@keyframes project-item{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 .project-items:hover{
