@@ -4,22 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
-      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"rel="stylesheet"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css-file/reset.css" />
     <link rel="stylesheet" href="./css-file/style.css" />
+
   </head>
 
   <body>
@@ -66,7 +59,7 @@
       <!-- Шапка сайту -->
       <section class="hero">
         <div class="conteiner hero-box">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <h1 class="hero-title animate__animated animate__rubberBand">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-btn" data-modal-open>
             Замовити послуги
           </button>
@@ -76,27 +69,27 @@
       <section class="aboutpage">
         <div class="conteiner aboutpage-box">
           <ul class="aboutpage-list">
-            <li class="aboutpage-item">
+            <li class="aboutpage-item" data-aos="fade-up-right">
               <h3 class="aboutpage-title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="aboutpage-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li class="aboutpage-item">
+            <li class="aboutpage-item" data-aos="fade-up">
               <h3 class="aboutpage-title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="aboutpage-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li class="aboutpage-item">
+            <li class="aboutpage-item" data-aos="fade-up">
               <h3 class="aboutpage-title">ПЛАНУВАННЯ</h3>
               <p class="aboutpage-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="aboutpage-item">
+            <li class="aboutpage-item" data-aos="fade-up-left">
               <h3 class="aboutpage-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="aboutpage-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -109,9 +102,9 @@
       <!-- Чим ми займаємось -->
       <section class="ourwork">
         <div class="conteiner">
-          <h2 class="ourwork-title">Чим ми займаємось</h2>
+          <h2 class="ourwork-title" data-aos="fade-up">Чим ми займаємось</h2>
           <ul class="ourwork-list">
-            <li class="ourwork-item">
+            <li class="ourwork-item" data-aos="flip-left">
               <img
                 src="./image/programming.webp"
                 alt="program"
@@ -119,7 +112,7 @@
               />
               <p class="ourwork-text">ДЕСКТОПНІ ДОДАТКИ</p>
             </li>
-            <li class="ourwork-item">
+            <li class="ourwork-item" data-aos="flip-left">
               <img
                 src="./image/developer.webp"
                 alt="testing"
@@ -127,7 +120,7 @@
               />
               <p class="ourwork-text">МОБІЛЬНІ ДОДАТКИ</p>
             </li>
-            <li class="ourwork-item">
+            <li class="ourwork-item" data-aos="flip-left">
               <img
                 src="./image/desainer.webp"
                 alt="desain"
@@ -141,9 +134,9 @@
       <!-- Наша команда -->
       <section class="aboutus">
         <div class="conteiner">
-          <h2 class="aboutus-title">Наша команда</h2>
-          <ul class="aboutus-list">
-            <li class="aboutus-item">
+          <h2 class="aboutus-title" data-aos="zoom-in">Наша команда</h2>
+          <ul class="aboutus-list" data-aos="zoom-in-up">
+            <li class="aboutus-item" >
               <img
                 src="./image/igor.webp"
                 alt="Ігор Дем'яненко"
@@ -153,7 +146,7 @@
                 <h3 class="aboutus-heading">Ігор Дем'яненко</h3>
                 <p class="aboutus-text">Product Designer</p>
                 <ul class="aboutus-box">
-                  <li>
+                  <li >
                     <a href="#" class="aboutus-internet">
                       <svg class="aboutus-icon">
                         <use
@@ -162,14 +155,14 @@
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li >
                     <a href="#" class="aboutus-internet">
                       <svg class="aboutus-icon">
                         <use href="./image/symbol-defs.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li>
+                  <li >
                     <a href="#" class="aboutus-internet">
                       <svg class="aboutus-icon">
                         <use href="./image/symbol-defs.svg#icon-facebook"></use>
@@ -326,42 +319,42 @@
         <div class="conteiner">
           <h2 class="client-title">Постійні клієнти</h2>
           <ul class="client-list">
-            <li class="client-item">
+            <li class="client-item"  data-aos="flip-left">
               <a href="" class="client-link">
                 <svg class="client-icon">
                   <use href="./image/symbol-defs.svg#icon-yaco"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="flip-up">
               <a href="" class="client-link">
                 <svg class="client-icon">
                   <use href="./image/symbol-defs.svg#icon-tagline"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="flip-up">
               <a href="" class="client-link">
                 <svg class="client-icon">
                   <use href="./image/symbol-defs.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="flip-up">
               <a href="" class="client-link">
                 <svg class="client-icon">
                   <use href="./image/symbol-defs.svg#icon-foster"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="flip-up">
               <a href="" class="client-link">
                 <svg class="client-icon">
                   <use href="./image/symbol-defs.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
-            <li class="client-item">
+            <li class="client-item" data-aos="flip-right">
               <a href="" class="client-link">
                 <svg class="client-icon">
                   <use href="./image/symbol-defs.svg#icon-tagcompany"></use>
@@ -373,7 +366,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="zoom-in-up">
       <div class="conteiner footer-box">
         <div>
           <a href="./index.html" class="footer-logo"
@@ -498,6 +491,12 @@
         </form>
       </div>
     </div>
+   
     <script src="./js/modal.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
   </body>
 </html>

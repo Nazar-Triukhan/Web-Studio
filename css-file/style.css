@@ -197,10 +197,10 @@ body {
   margin-right: auto;
   display: flex;
   text-align: center;
-  animation: move-text-hero 700ms;
+  /* animation: move-text-hero 700ms; */
 }
 
-@keyframes move-text-hero{
+/* @keyframes move-text-hero{
   0%{
     transform:  scale(0);
   }
@@ -210,7 +210,7 @@ body {
   100%{
     transform:  scale(1);
   }
-}
+} */
 
 .hero-text {
   display: flex;
