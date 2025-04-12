@@ -1,0 +1,49 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client-title {
+  color: var(--logo-color);
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.2;
+}
+
+.client-list {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.client-item {
+}
+
+.client-link {
+  border: solid 1px #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover {
+  border-color: var(--button-backgrouhd-color);
+  .client-icon {
+    fill: var(--button-backgrouhd-color);
+  }
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
