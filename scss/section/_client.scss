@@ -4,7 +4,7 @@
 }
 
 .client-title {
-  color: var(--logo-color);
+  color: $logo-color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -15,9 +15,6 @@
   display: flex;
   margin-top: 50px;
   justify-content: space-between;
-}
-
-.client-item {
 }
 
 .client-link {
@@ -33,9 +30,9 @@
 }
 
 .client-link:hover {
-  border-color: var(--button-backgrouhd-color);
+  border-color: $button-backgrouhd-color;
   .client-icon {
-    fill: var(--button-backgrouhd-color);
+    fill: $button-backgrouhd-color;
   }
 }
 

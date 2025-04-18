@@ -1,11 +1,11 @@
 .aboutus {
-  background-color: var(--team-background-color);
+  background-color: $team-background-color;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 .aboutus-title {
-  color: var(--max-text-color);
+  color: $max-text-color;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -23,8 +23,8 @@
 }
 
 .aboutus-item {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow-color);
+  background: $primary-color;
+  box-shadow: $box-shadow-color;
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .aboutus-heading {
-  color: var(--max-text-color);
+  color: $max-text-color;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -49,7 +49,7 @@
 }
 
 .aboutus-text {
-  color: var(--mini-text-color);
+  color: $mini-text-color;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -78,7 +78,7 @@
 .aboutus-internet {
   width: 44px;
   height: 44px;
-  background-color: var(--primary-color);
+  background-color: $primary-color;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,8 +89,8 @@
 }
 
 .aboutus-internet:hover {
-  background-color: var(--button-backgrouhd-color);
+  background-color: $button-backgrouhd-color;
   .aboutus-icon {
-    fill: var(--primary-color);
+    fill: $primary-color;
   }
 }

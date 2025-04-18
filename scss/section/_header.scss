@@ -1,30 +1,27 @@
-/* навігація сайту */
-
 
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
 
-}
+  &__box {
+    display: flex;
+    align-items: center;
+  }
 
-.header-box {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo {
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-}
+  &__logo {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+  }
 
 .Web { 
-  color: var(--button-backgrouhd-color);
+  color: $button-backgrouhd-color;
   display: inline-block;
   animation: move-logo-left 700ms ease-out;
 }
+  
 
 @keyframes move-logo-left {
   0% {
@@ -38,7 +35,7 @@
 }
 
 .Studio {
-  color: var(--logo-color);
+  color: $logo-color;
   display: inline-block;
   animation: move-logo-right 700ms ease-out;
 }
@@ -54,7 +51,7 @@
   }
 }
 
-.header-list {
+.header__list {
   display: flex;
   gap: 50px;
   margin-left: 93px;
@@ -70,19 +67,20 @@
   }
 }
 
-.header-items {
+&__items {
   display: flex;
   gap: 30px;
   margin-left: auto;
   animation: move-list 700ms;
 }
 
-.header-item{
+
+&__item{
   position: relative;
 }
 
-.header-contact {
-  color: var(--max-text-color);
+&__contact {
+  color: $max-text-color;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -90,29 +88,33 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $button-backgrouhd-color;
+    left: 0;
+    bottom: -30px;
+    position: absolute;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover::after{
+    opacity: 1;
+  }
+
+  &:hover {
+    color: $button-backgrouhd-color;
+  }
 }
 
-.header-contact::after{
-  content: "";
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--button-backgrouhd-color);
-  left: 0;
-  bottom: -30px;
-  position: absolute;
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-contact:hover::after{
-  opacity: 1;
-}
-
-.header-link {
-  color: var(--mini-text-color);
+&__link {
+  color: $mini-text-color;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -124,28 +126,28 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-icon {
+ &__icon {
   width: 16px;
   height: 12px;
-  fill: var(--mini-text-color);
+  fill: $mini-text-color;
   margin-right: 10px;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-elemet:last-child .header-icon {
+&__elemet:last-child &__icon {
   width: 10px;
   height: 16px;
 }
 
-.header-contact:hover {
-  color: var(--button-backgrouhd-color);
-}
-
-.header-link:hover {
-  color: var(--button-backgrouhd-color);
-  .header-icon {
-    fill: var(--button-backgrouhd-color);
+&__link:hover {
+  color: $button-backgrouhd-color;
+  &__icon {
+    fill: $button-backgrouhd-color;
   }
 }
+
+}
+
+

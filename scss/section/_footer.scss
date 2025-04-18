@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--header-footer-background-color);
+  background-color: $header-footer-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -18,11 +18,11 @@
 }
 
 .footer-Web {
-  color: var(--button-backgrouhd-color);
+  color: $button-backgrouhd-color;
 }
 
 .footer-Studio {
-  color: var(--primary-color);
+  color: $primary-color;
 }
 
 .footer-address {
