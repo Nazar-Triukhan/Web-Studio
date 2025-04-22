@@ -122,6 +122,12 @@ body {
 .header__contact:hover::after {
   opacity: 1;
 }
+.header__activ-studio {
+  color: #2196f3;
+}
+.header__avtive-portfolio {
+  color: #2196f3;
+}
 .header__link {
   color: #757575;
   font-size: 14px;
