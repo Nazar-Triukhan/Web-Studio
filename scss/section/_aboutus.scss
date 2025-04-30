@@ -70,21 +70,20 @@
     fill: #afb1b8;
     display: flex;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
 
   &__internet {
     width: 44px;
     height: 44px;
     background-color: $primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex($wrap:nowrap);
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     border-radius: 50%;
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 
     &:hover {
       background-color: $button-backgrouhd-color;

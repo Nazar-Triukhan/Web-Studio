@@ -23,8 +23,7 @@
     background: $team-background-color;
 
     transition-property: color, background;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 
     animation: project-btn 700ms;
 
@@ -35,8 +34,7 @@
       box-shadow: $box-shadow-btn-color;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
       transition-property: box-shadow;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transition;
     }
   }
 
@@ -53,8 +51,7 @@
     &:hover {
       box-shadow: $box-shadow-portfolio-color;
       transition-property: box-shadow;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transition;
 
       .project__paragraf {
         opacity: 1;
