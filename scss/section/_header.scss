@@ -1,6 +1,15 @@
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (min-width: 768px){
+    
+  }
+
+  @media screen and (min-width: 1200px){
+    padding: 25px 0;
+    font-size: 26px;
+  }
 
   &__box {
     display: flex;
