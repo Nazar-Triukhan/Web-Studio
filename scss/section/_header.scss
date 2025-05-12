@@ -3,7 +3,7 @@
   padding-bottom: 10px;
 
   @media screen and (min-width: 768px){
-    
+    padding: 21px 0;
   }
 
   @media screen and (min-width: 1200px){
@@ -18,10 +18,21 @@
 
   &__logo {
     font-family: Raleway;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.14;
-    letter-spacing: 0.28px;
+    letter-spacing: 0.72px;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px){
+     margin-right: 88px;
+    }
+
+    @media screen and (min-width: 1200px){
+     font-size: 26px;
+     letter-spacing: 0.76px;
+     margin-right: 93px;
+    }
   }
 
   .Web {
@@ -37,10 +48,16 @@
   }
 
   &__list {
-    display: flex;
+    display: none;
     gap: 50px;
-    margin-left: 93px;
     animation: move-list 700ms;
+
+
+      @media screen and (min-width: 768px){
+        display: flex;
+      }
+      @media screen and (min-width: 1200px){
+      }
   }
 
   @keyframes move-logo-left {
@@ -75,10 +92,20 @@
   }
 
   &__items {
-    display: flex;
-    gap: 30px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
     margin-left: auto;
     animation: move-list 700ms;
+
+      @media screen and (min-width: 768px){
+        display: flex;
+      }
+
+      @media screen and (min-width: 1200px){
+        flex-direction: row;
+        gap: 30px;
+      }
   }
 
   &__item {
@@ -129,13 +156,17 @@
 
   &__link {
     color: $mini-text-color;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
     display: flex;
     align-items: center;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      @media screen and (min-width: 1200px){
+       font-size: 14px;
+      }
 
     &:hover {
       color: $button-backgrouhd-color;
@@ -147,15 +178,23 @@
   }
 
   &__icon {
-    width: 16px;
-    height: 12px;
+    width: 14px;
+    height: 10px;
     fill: $mini-text-color;
     margin-right: 10px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      @media screen and (min-width: 1200px){
+      width: 16px;
+      height: 12px;
+      }
   }
 
   &__elemet:last-child .header__icon {
     width: 10px;
-    height: 16px;
+    height: 14px;
+       @media screen and (min-width: 1200px){
+       width: 10px;
+       height: 16px;
+      }
   }
 }

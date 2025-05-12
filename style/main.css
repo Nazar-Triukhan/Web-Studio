@@ -56,6 +56,11 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header {
     padding: 25px 0;
@@ -68,10 +73,23 @@ body {
 }
 .header__logo {
   font-family: Raleway;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.14;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.72px;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    font-size: 26px;
+    letter-spacing: 0.76px;
+    margin-right: 93px;
+  }
 }
 .header .Web {
   color: #2196f3;
@@ -84,10 +102,14 @@ body {
   animation: move-logo-right 700ms ease-out;
 }
 .header__list {
-  display: flex;
+  display: none;
   gap: 50px;
-  margin-left: 93px;
   animation: move-list 700ms;
+}
+@media screen and (min-width: 768px) {
+  .header__list {
+    display: flex;
+  }
 }
 @keyframes move-logo-left {
   0% {
@@ -118,10 +140,22 @@ body {
   }
 }
 .header__items {
-  display: flex;
-  gap: 30px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
   margin-left: auto;
   animation: move-list 700ms;
+}
+@media screen and (min-width: 768px) {
+  .header__items {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__items {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 .header__item {
   position: relative;
@@ -160,13 +194,18 @@ body {
 }
 .header__link {
   color: #757575;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .header__link {
+    font-size: 14px;
+  }
 }
 .header__link:hover {
   color: #2196f3;
@@ -175,47 +214,77 @@ body {
   fill: #2196f3;
 }
 .header__icon {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   fill: #757575;
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .header__icon {
+    width: 16px;
+    height: 12px;
+  }
+}
 .header__elemet:last-child .header__icon {
   width: 10px;
-  height: 16px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .header__elemet:last-child .header__icon {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .hero {
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: url(../image/shapka.webp);
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/shapka.webp);
   /* @keyframes move-text-hero{
-    0%{
-      transform:  scale(0);
-    }
-    50%{
-      transform: scale(1.5);
-    }
-    100%{
-      transform:  scale(1);
-    }
-  } */
+      0%{
+        transform:  scale(0);
+      }
+      50%{
+        transform: scale(1.5);
+      }
+      100%{
+        transform:  scale(1);
+      }
+    } */
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 .hero__title {
   color: #ffffff;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
-  letter-spacing: 2.64px;
+  letter-spacing: 1.56px;
   text-transform: uppercase;
-  width: 696px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   text-align: center;
   /* animation: move-text-hero 700ms; */
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 2.64px;
+  }
 }
 .hero__text {
   display: flex;
@@ -239,6 +308,11 @@ body {
   margin-right: auto;
   animation: move-button 4000ms infinite alternate, move-btn-hero 700ms;
   animation-timing-function: ease-in;
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    padding: 10px 32px;
+  }
 }
 @keyframes move-btn-hero {
   0% {

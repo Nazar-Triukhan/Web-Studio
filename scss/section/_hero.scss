@@ -1,26 +1,40 @@
 .hero {
   background-color: $header-footer-background-color;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: url(../image/shapka.webp);
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../image/shapka.webp);
 
-    &__title {
-      color: $primary-color;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+
+  &__title {
+    color: $primary-color;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+    /* animation: move-text-hero 700ms; */
+
+        @media screen and (min-width: 480px) {
+      width: 360px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 696px;
       font-size: 44px;
       line-height: 1.36;
       letter-spacing: 2.64px;
-      text-transform: uppercase;
-      width: 696px;
-      margin-left: auto;
-      margin-right: auto;
-      display: flex;
-      text-align: center;
-      /* animation: move-text-hero 700ms; */
     }
-    
-    /* @keyframes move-text-hero{
+  }
+
+  /* @keyframes move-text-hero{
       0%{
         transform:  scale(0);
       }
@@ -31,56 +45,56 @@
         transform:  scale(1);
       }
     } */
-    
-    &__text {
-      display: flex;
-      justify-content: center;
-    }
-    
-    &__btn {
-      border-radius: 4px;
-      background: $button-backgrouhd-color;
-      box-shadow: 0px 4px 4px 0px $button-hero-color;
-      padding: 10px 32px;
-      border: none;
-      color: $primary-color;
-      text-align: center;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 1.87;
-      letter-spacing: 0.96px;
-      margin-top: 30px;
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      animation: move-button 4000ms infinite alternate,
-      move-btn-hero 700ms;
-      animation-timing-function: ease-in;
-    }
-    
-    @keyframes move-btn-hero{
-      0%{
-        transform: translate(0,200px) scale(0);
-      }
-      100%{
-        transform: translate(0,0) scale(1);
-      }
-    }
-    
-    @keyframes move-button {
-      0%{
-        background-color: #2196f3;
-        transform: scale(0.95);
-      }
-      50%{
-        background-color: #124a78;
-      }
-      100%{
-        background-color: #2196f3;
-        transform: scale(1.01);
-      }
-    }
-    
 
+  &__text {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    border-radius: 4px;
+    background: $button-backgrouhd-color;
+    box-shadow: 0px 4px 4px 0px $button-hero-color;
+    padding: 10px 32px;
+    border: none;
+    color: $primary-color;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+    margin-top: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    animation: move-button 4000ms infinite alternate, move-btn-hero 700ms;
+    animation-timing-function: ease-in;
+
+    @media screen and (min-width: 1200px){
+    padding: 10px 32px;
 }
+  }
 
+  @keyframes move-btn-hero {
+    0% {
+      transform: translate(0, 200px) scale(0);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+
+  @keyframes move-button {
+    0% {
+      background-color: #2196f3;
+      transform: scale(0.95);
+    }
+    50% {
+      background-color: #124a78;
+    }
+    100% {
+      background-color: #2196f3;
+      transform: scale(1.01);
+    }
+  }
+}
