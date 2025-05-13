@@ -1,5 +1,10 @@
 .ourwork {
   padding-bottom: 94px;
+  display: none;
+
+@media screen and (min-width: 1200px){
+  display: flex;
+}
 
   &__title {
     color: $max-text-color;

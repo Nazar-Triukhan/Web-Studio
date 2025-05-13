@@ -448,6 +448,12 @@ body {
 
 .ourwork {
   padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .ourwork {
+    display: flex;
+  }
 }
 .ourwork__title {
   color: #212121;
@@ -500,17 +506,24 @@ body {
 .aboutus__title {
   color: #212121;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.16;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.44px;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .aboutus__title {
+    font-size: 36px;
+    letter-spacing: 0.48px;
+  }
+}
 .aboutus__list {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 .aboutus__item {
@@ -520,12 +533,33 @@ body {
 }
 .aboutus__background {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .aboutus__background {
+    padding-bottom: 30px;
+  }
 }
 .aboutus__image {
-  width: 270px;
-  height: 260px;
-  flex-shrink: 0;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .aboutus__image {
+    width: 450px;
+    height: 460px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aboutus__image {
+    width: 354px;
+    height: 374px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aboutus__image {
+    width: 270px;
+    height: 260px;
+  }
 }
 .aboutus__heading {
   color: #212121;

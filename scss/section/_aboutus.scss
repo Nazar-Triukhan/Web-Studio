@@ -6,18 +6,24 @@
   &__title {
     color: $max-text-color;
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 1.16;
-    letter-spacing: 0.48px;
+    letter-spacing: 0.44px;
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+
+@media screen and (min-width: 1200px){
+  font-size: 36px;
+  letter-spacing: 0.48px;
+}
   }
 
   &__list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
@@ -29,13 +35,26 @@
 
   &__background {
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 24px;
+    @media screen and (min-width: 1200px){
+  padding-bottom: 30px;
+}
   }
 
   &__image {
-    width: 270px;
-    height: 260px;
-    flex-shrink: 0;
+    width: 100%;
+    @media screen and (min-width: 480px){
+  width: 450px;
+  height: 460px;
+}
+@media screen and (min-width: 768px){
+  width: 354px;
+  height: 374px;
+}
+@media screen and (min-width: 1200px){
+  width: 270px;
+  height: 260px;
+}
   }
 
   &__heading {
