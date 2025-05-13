@@ -245,6 +245,9 @@ body {
   padding-bottom: 118px;
   background-image: url(../image/shapka.webp);
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/shapka.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /* @keyframes move-text-hero{
       0%{
         transform:  scale(0);
@@ -339,21 +342,46 @@ body {
 }
 
 .aboutpage {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .aboutpage {
+    padding: 94px 0;
+  }
 }
 .aboutpage__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .aboutpage__list {
+    width: 1200px;
+  }
 }
 .aboutpage__item::before {
   content: "";
-  width: 270px;
+  width: 100%;
   height: 120px;
   border-radius: 4px;
   background: #f5f4fa;
   margin-bottom: 30px;
   display: block;
+}
+@media screen and (min-width: 480px) {
+  .aboutpage__item::before {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aboutpage__item::before {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aboutpage__item::before {
+    width: 270px;
+  }
 }
 .aboutpage__item:nth-child(1)::before {
   content: "";
@@ -386,6 +414,12 @@ body {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .aboutpage__title {
+    text-align: start;
+  }
 }
 .aboutpage__text {
   color: #757575;
@@ -394,6 +428,22 @@ body {
   line-height: 1.71;
   letter-spacing: 0.42px;
   margin-top: 10px;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .aboutpage__text {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aboutpage__text {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .aboutpage__text {
+    width: 270px;
+  }
 }
 
 .ourwork {
