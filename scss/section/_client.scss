@@ -1,42 +1,61 @@
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: block;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px){
+  padding:94px 0;
 }
 
-.client__title {
+&__title {
   color: $logo-color;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 1.2;
+  @media screen and (min-width: 1200px){
+  font-size: 36px;
+}
 }
 
-.client__list {
+&__list {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
+  // justify-content: space-between;
+  gap: 28px;
   justify-content: space-between;
 }
 
-.client__link {
+&__link {
   border: solid 1px #afb1b8;
   border-radius: 4px;
-  @include flex($wrap:nowrap);
-  // display: flex;
-  // align-items: center;
+  // @include flex($wrap:nowrap);
+  display: flex;
+  align-items: center;
   // justify-content: center;
-  padding: 16px 32px;
   transition-property: border;
   @extend %transition;
+  padding: 16px 45px;
+
+    @media screen and (min-width: 480px){
+  padding: 16px 52px;
 }
 
-.client__link:hover {
+  @media screen and (min-width: 768px){
+      padding: 16px 60px;
+}
+  @media screen and (min-width: 1200px){
+      padding: 16px 32px;
+}
+}
+
+&__link:hover {
   border-color: $button-backgrouhd-color;
   .client__icon {
     fill: $button-backgrouhd-color;
   }
 }
 
-.client__icon {
+&__icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
@@ -45,3 +64,5 @@
   // transition-duration: 250ms;
   // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
