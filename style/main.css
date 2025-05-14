@@ -707,6 +707,7 @@ body {
   .footer__logo {
     font-size: 26px;
     letter-spacing: 0.78px;
+    text-align: start;
   }
 }
 .footer__Web {
@@ -740,6 +741,11 @@ body {
   display: block;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer__link {
+    text-align: start;
+  }
+}
 .footer__item:nth-last-child(-n+2) {
   margin-top: 9px;
 }
@@ -761,6 +767,11 @@ body {
   display: block;
   margin-top: 60px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    text-align: start;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__title {
@@ -809,7 +820,8 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer__box__sub {
-    margin-right: auto;
+    margin-top: 0px;
+    margin-right: 0;
   }
 }
 .footer__subtitle {

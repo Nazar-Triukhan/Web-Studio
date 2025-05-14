@@ -29,6 +29,7 @@
     @media screen and (min-width: 1200px) {
       font-size: 26px;
       letter-spacing: 0.78px;
+      text-align: start;
     }
   }
 
@@ -67,7 +68,8 @@
     letter-spacing: 0.42px;
     display: block;
     text-align: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1200px) {
+      text-align: start;
     }
   }
 
@@ -92,10 +94,9 @@
     display: block;
       margin-top: 60px;
   text-align: center;
-        @media screen and (min-width: 480px){
-
-
-}
+        @media screen and (min-width: 1200px){
+          text-align: start;
+        }
     @media screen and (min-width: 768px) {
       margin-top: 0px;
     }
@@ -150,7 +151,8 @@
       margin-right: auto;
     }
     @media screen and (min-width: 1200px) {
-      margin-right: auto;
+      margin-top: 0px;
+      margin-right: 0;
     }
   }
 
