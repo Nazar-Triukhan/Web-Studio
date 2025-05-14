@@ -868,6 +868,11 @@ body {
     margin-top: 0px;
   }
 }
+@media screen and (min-width: 768px) {
+  .footer__label {
+    margin-right: 200px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__label {
     display: flex;

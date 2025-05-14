@@ -187,7 +187,11 @@
 
   &__label {
 
-  
+    
+
+    @media screen and (min-width: 768px) {
+      margin-right: 200px;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
     }
