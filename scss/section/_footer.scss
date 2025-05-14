@@ -18,6 +18,10 @@
     }
   }
 
+  &__boxs{
+    margin-left: auto;
+  }
+
   &__logo {
     font-family: Raleway;
     font-size: 24px;
@@ -148,11 +152,11 @@
         }
     @media screen and (min-width: 768px) {
       margin-top: 60px;
-      margin-right: auto;
     }
     @media screen and (min-width: 1200px) {
       margin-top: 0px;
       margin-right: 0;
+
     }
   }
 
@@ -182,9 +186,8 @@
   }
 
   &__label {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+  
     @media screen and (min-width: 1200px) {
       display: flex;
     }
@@ -198,6 +201,7 @@
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-left: 16px;
+
 
     @media screen and (min-width: 480px){
   width: 450px;
