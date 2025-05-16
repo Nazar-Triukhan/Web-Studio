@@ -5,9 +5,18 @@
 
   &__list {
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    @media screen and (min-width: 768px){
+  margin-bottom: 30px;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px){
+margin-bottom: 50px;
+}
   }
 
   &__btn {
@@ -47,6 +56,17 @@
   &__items {
     flex-basis: calc((100% - 60px) / 3);
     animation: project-item 700ms;
+    flex-basis: 100%;
+
+@media screen and (min-width: 450px){
+    flex-basis: 450px;
+}
+@media screen and (min-width: 768px){
+    flex-basis: calc((100% - 60px) / 2);
+}
+@media screen and (min-width: 1200px){
+      flex-basis: calc((100% - 60px) / 3);
+}
 
     &:hover {
       box-shadow: $box-shadow-portfolio-color;

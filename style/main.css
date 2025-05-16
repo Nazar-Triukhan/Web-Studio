@@ -91,6 +91,22 @@ body {
     margin-right: 93px;
   }
 }
+.header__btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+.header__menu {
+  width: 40px;
+  height: 40px;
+}
 .header .Web {
   color: #2196f3;
   display: inline-block;
@@ -967,9 +983,22 @@ body {
 }
 .project__list {
   gap: 8px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  row-gap: 15px;
+}
+@media screen and (min-width: 768px) {
+  .project__list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__list {
+    margin-bottom: 50px;
+  }
 }
 .project__btn {
   color: #212121;
@@ -1001,6 +1030,22 @@ body {
 .project__items {
   flex-basis: calc((100% - 60px) / 3);
   animation: project-item 700ms;
+  flex-basis: 100%;
+}
+@media screen and (min-width: 450px) {
+  .project__items {
+    flex-basis: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project__items {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project__items {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .project__items:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);

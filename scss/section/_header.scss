@@ -35,6 +35,22 @@
     }
   }
 
+  &__btn{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 768px){
+    display: none;
+}
+  }
+
+  &__menu{
+    width: 40px;
+    height: 40px;
+  }
+
   .Web {
     color: $button-backgrouhd-color;
     display: inline-block;
