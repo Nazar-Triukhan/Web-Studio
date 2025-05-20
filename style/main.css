@@ -1133,7 +1133,7 @@ body {
   transform: scale(0);
 }
 .modal__modal {
-  width: 528px;
+  width: 300px;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1141,6 +1141,21 @@ body {
   padding: 40px;
   transform: scale(1);
   transition-property: transform;
+}
+@media screen and (min-width: 480px) {
+  .modal__modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal__modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__modal {
+    width: 528px;
+  }
 }
 .modal__close {
   background-color: transparent;
@@ -1190,7 +1205,7 @@ body {
 }
 .modal__input {
   height: 40px;
-  width: 448px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   display: block;
@@ -1204,6 +1219,16 @@ body {
 }
 .modal__input:hover + .modal__icon_person, .modal__input:focus + .modal__icon_person {
   fill: #2196f3;
+}
+@media screen and (min-width: 480px) {
+  .modal__input {
+    width: 370px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__input {
+    width: 448px;
+  }
 }
 .modal__icon_person {
   width: 18px;
@@ -1235,7 +1260,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.42px;
-  margin-left: 8px;
+  width: 100px;
 }
 .modal__dogovor {
   color: #2196f3;
