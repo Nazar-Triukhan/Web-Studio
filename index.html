@@ -20,7 +20,7 @@
         <a href="./index.html" class="header__logo">
           <span class="Web">Web</span><span class="Studio">Studio</span>
         </a>
-        <button class="header__btn">
+        <button class="header__btn" data-mobile-open>
           <svg class="header__menu">
             <use href="./image/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -28,7 +28,7 @@
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item">
-              <a href="./index.html" class="header__contact header__activ-studio">Студія</a>
+              <a href="./index.html" class="header__contact active">Студія</a>
             </li>
             <li class="header__item">
               <a href="./portfolio.html" class="header__contact">Портфоліо</a>
@@ -56,7 +56,30 @@
             </a>
           </li>
         </ul>
-      </div>
+
+       <div class="mobile is-hidden" data-mobile>
+          <button type="button" class="mobile__close" data-mobile-close>
+            <svg class="mobile__icon">
+          <use href="./image/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__list">
+            <li class="mobile__item"><a href="./index.html" class="mobile__link active">Студія</a></li>
+            <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
+            <li class="mobile__item"><a href="#" class="mobile__link">Контакти</a></li>
+          </ul>
+          <ul class="mobile__items">
+            <li class="mobile__itm"><a href="tel:+380961111111" class="mobile__contact">+38 096 111 11 11</a></li>
+            <li class="mobile__itm"><a href="mailto:info@devstudio.com" class="mobile__contact">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile__elements">
+            <li class="mobile__elem"><a href="#" class="mobile__social">Instagram</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">Twitter</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">Facebook</a></li>
+            <li class="mobile__elem"><a href="#" class="mobile__social">LinkedIn</a></li>
+          </ul>
+        </div>
+
     </header>
     <main class="main">
       <!-- Шапка сайту -->
@@ -474,11 +497,11 @@
     </div>
     
    
+    <script src="./js/mobail.js"></script>
     <script src="./js/modal.js"></script>
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
   </body>
 </html>
