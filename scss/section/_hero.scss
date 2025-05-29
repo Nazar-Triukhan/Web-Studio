@@ -2,17 +2,73 @@
   background-color: $header-footer-background-color;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: url(../image/shapka.webp);
+  background-image: url(../image/mobile/hero_mobail@1x.webp);
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../image/shapka.webp);
       background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
-  @media screen and (min-width: 1200px) {
-    padding: 200px 0;
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(../image/mobile/hero_mobail@2x.webp);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/shapka.webp);
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../image/tablet/hero-tablite@1x.webp);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/shapka.webp);
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(../image/destop/hero-destop@2x.webp);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/shapka.webp);
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
   }
 
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+        background-image: url(../image/destop/hero-destop@1x.webp);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/shapka.webp);
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+      @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  background-image: url(../image/destop/hero-destop@2x.webp);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/shapka.webp);
+          background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  }
+
+
+
+
+
+
+
+
+
+  
   &__title {
     color: $primary-color;
     font-size: 26px;
