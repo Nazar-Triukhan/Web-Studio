@@ -353,8 +353,7 @@ body {
   background-color: #2f303a;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-image: url(../image/mobile/hero_mobail@1x.webp);
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/shapka.webp);
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/mobile/hero_mobail@1x.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -372,8 +371,7 @@ body {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../image/mobile/hero_mobail@2x.webp);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/shapka.webp);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/mobile/hero_mobail@2x.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -381,8 +379,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../image/tablet/hero-tablite@1x.webp);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/shapka.webp);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/tablet/hero-tablite@1x.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -390,8 +387,7 @@ body {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../image/destop/hero-destop@2x.webp);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/shapka.webp);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/destop/hero-destop@2x.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -400,8 +396,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
-    background-image: url(../image/destop/hero-destop@1x.webp);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/shapka.webp);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/destop/hero-destop@1x.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -409,8 +404,7 @@ body {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../image/destop/hero-destop@2x.webp);
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/shapka.webp);
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/destop/hero-destop@2x.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
